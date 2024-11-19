@@ -1,1 +1,259 @@
-<h1>Hello world</h1>
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1" />
+<title>Zap Zap BOOM</title>
+<link rel="stylesheet" href="css/swiper.css">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700,900" rel="stylesheet"> 
+
+<style type="text/css">
+video {
+		position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    min-height: 50%;
+    min-width: 50%;
+
+}
+
+.video_contain {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+	opacity: 0.1;
+	z-index: 99999;
+}
+</style>
+</head>
+<body>
+	<header class="header">
+		<div class="header__content header__content--fluid-width">
+		
+		</div>		
+	</header>
+
+	
+	<!-- Section -- intro -->
+	<section class="section section--intro" id="intro">
+		<div class="video_contain">
+			<video autoplay muted loop id="myVideo">
+				<source src="images/background.mp4" type="video/mp4">
+			  </video>
+		</div>
+	
+			<div class="section__content section__content--fluid-width section__content--intro">
+				<div class="intro">
+				    <div class="intro__content">
+					<div class="intro__title"><span>Redefining </span>Your Reality</div>
+					<div class="intro__subtitle" style="font-weight: bold;">Imagine a world where the boundaries between sleep and creativity blur, where your dreams are no longer fleeting but captured, explored, and brought to life.  </div>
+				    </div>	
+				</div>
+			</div>
+			
+	</section>
+	
+
+	
+	<!-- Section -- features -->
+	
+	
+	<!-- Section -- testimonials -->
+	<section class="section section--testimonials" id="testimonials">
+
+			<div class="section__content section__content--fluid-width section__content--padding">
+			        <h2 class="section__title section__title--centered">Meet the team</h2>
+					  <div class="testimonials">
+						<div class="testimonials__content swiper-wrapper">
+							  <div class="testimonials__slide swiper-slide">
+								<div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="images/3.png" alt="" title=""/></div>
+								<div class="testimonials__frame">
+									<div class="testimonials__source">Lauri Lubi <a href="#">Chief Executive Officer</a></div>
+								</div>
+								
+							  </div>
+							  <div class="testimonials__slide swiper-slide">
+								<div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="images/4.png" alt="" title=""/></div>
+								<div class="testimonials__frame">
+									<div class="testimonials__source">Josef Ottosson <a href="#">Chief Technology Officer</a></div>
+								</div>
+								
+							  </div>
+							  <div class="testimonials__slide swiper-slide">
+								<div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="images/2.png" alt="" title=""/></div>
+								<div class="testimonials__frame">
+									<div class="testimonials__source">Tobias Jakobsson <a href="#">Chief Operative Officer</a></div>
+								</div>
+								
+							  </div>
+							  <div class="testimonials__slide swiper-slide">
+								<div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="images/1.png" alt="" title=""/></div>
+								<div class="testimonials__frame">
+									<div class="testimonials__source">Isak Björnström <a href="#">Chief Sales and Marketing Officer</a></div>
+								</div>
+								
+							  </div>
+						</div>
+						
+						<div class="testimonials__pagination swiper-pagination"></div>
+						        <div class="testimonials__button--next swiper-button-next"></div>
+							<div class="testimonials__button--prev swiper-button-prev"></div>
+					</div>
+				<div class="clear"></div>
+			</div>
+		
+	</section>	
+	
+	
+
+	
+	<footer class="footer" id="footer">
+			<div class="footer__content footer__content--fluid-width footer__content--svg">
+			
+				<div class="grid grid--5col">
+				
+					<div class="grid__item grid__item--x2">
+						<h3 class="grid__title grid__title--footer-logo">Zap Zap Boom</h3>
+						<p class="grid__text grid__text--copyright">Copyright &copy; 2024 Zap Zap Boom.  <br />All Rights Reserved. Proudly made in EU. </p>
+						<ul class="grid__list grid__list--sicons">
+								<li><a href="#"><img src="images/social/white/twitter.png" alt="" title=""/></a></li>
+								<li><a href="#"><img src="images/social/white/facebook.png" alt="" title=""/></a></li>
+								<li><a href="#"><img src="images/social/white/linkedin.png" alt="" title=""/></a></li>
+						</ul>
+					</div>
+					
+					
+					
+					
+				</div>
+				
+				
+			</div>
+
+
+	</footer>
+	
+
+	  <section class="modal modal--signuplogin">
+		<div class="modal__overlay modal__overlay--toggle"></div>
+		<div class="modal__wrapper modal-transition">
+		  
+		<div class="modal__body">
+		        
+			<div class="modal__content modal__content--login">
+				<div class="modal__info">
+					<h2 class="modal__title">First time here?</h2>
+					<div class="modal__descr">Join now and get <span>20% OFF</span> for all products</div>
+					<ul class="modal__list">
+					<li>premium access to all products</li>
+					<li>free testing tools</li>
+					<li>unlimited user accounts</li>
+					</ul>
+					<button class="modal__switch modal__switch--signup" data-popup="signup">Signup</button>
+				</div>
+				<div class="modal__form form">
+					<h2 class="form__title">Login</h2>
+						<form class="form__container" id="LoginForm" method="post" action="index.html">
+						
+						<div class="form__row">
+								<label class="form__label" for="namec">Name</label>
+							<input name="namec" id="namec" class="form__input" type="text"/>
+							<span class="form__row-border"></span>
+						</div>
+						<div class="form__row">
+								<label class="form__label">Email</label>
+							<input name="emailc" class="form__input" type="text"/>	
+							<span class="form__row-border"></span>									
+						</div>
+						
+						<div class="modal__checkbox"><input id="remember" name="remember" value="remember" checked type="checkbox"><label for="remember">Keep me Signed in</label></div>
+						<div class="modal__switch modal__switch--forgot" data-popup="forgot">Forgot Password?</div>
+						<input type="submit" name="submit" class="form__submit btn btn--green-bg" id="submitl" value="LOGIN" />
+						</form>
+				</div>
+			</div>  <!-- End Modal login -->
+			
+			<div class="modal__content modal__content--forgot">
+				<div class="modal__form form">
+					<h2 class="form__title">Forgot Password</h2>
+						<form class="form__container" id="ForgotForm" method="post" action="index.html">
+						<div class="form__row">
+							<label class="form__label">Email</label>
+							<input name="emailf" class="form__input" type="text"/>	
+							<span class="form__row-border"></span>									
+						</div>
+						<input type="submit" name="submit" class="form__submit btn btn--green-bg" id="submitf" value="RESET PASSWORD" />
+						</form>
+				</div>
+				<div class="modal__info">
+					<h2 class="modal__title">We got you covered</h2>
+					<div class="modal__descr">A new password will be sent by email. Remembered your password?</div>
+					<button class="modal__switch modal__switch--signup" data-popup="login">Login</button>
+				</div>
+			</div>  <!-- End Modal login -->
+			
+			
+			<div class="modal__content modal__content--signup">
+				<div class="modal__form form">
+					<h2 class="form__title">Signup</h2>
+						<form class="form__container" id="SignupForm" method="post" action="index.html">
+						<div class="form__row">
+							<label class="form__label" for="names">Username</label>
+							<input name="namec" id="names" class="form__input" type="text"/>
+							<span class="form__row-border"></span>
+						</div>
+						<div class="form__row">
+							<label class="form__label">Email</label>
+							<input name="emails" class="form__input" type="text"/>	
+							<span class="form__row-border"></span>									
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="pass">Password</label>
+							<input name="pass" id="pass" class="form__input" type="password"/>
+							<span class="form__row-border"></span>
+						</div>
+						<input type="submit" name="submit" class="form__submit btn btn--green-bg" id="submit" value="SIGNUP" />
+						</form>
+				</div>
+				<div class="modal__info">
+					<h2 class="modal__title">Allready have an account?</h2>
+					<div class="modal__descr">Login now and starting using our <span>amazing</span> products</div>
+					<ul class="modal__list">
+					<li>premium access to all products</li>
+					<li>free testing tools</li>
+					<li>unlimited user accounts</li>
+					</ul>
+					<button class="modal__switch modal__switch--login" data-popup="login">Login</button>
+				</div>
+			</div>  <!-- End Modal signup -->
+			
+		</div>
+		  
+		</div>
+	  </section>    <!-- Modal for Login and Signup -->
+	  
+	   <section class="modal modal--animation">
+		<div class="modal__overlay modal__overlay--toggle"></div>
+			<div class="modal__wrapper modal__wrapper--image modal-transition">
+				<div class="modal__body">
+					<button class="modal__close modal__overlay--toggle"><span></span></button>
+					<div class="modal__header">How it works animation</div>
+					
+					<div class="modal__image">
+						<img src="images/intro-animation.gif" alt="" title=""/>
+					</div>
+				</div>
+			</div>
+	  </section>    <!-- Modal for animation -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.custom.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/swiper.custom.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>
